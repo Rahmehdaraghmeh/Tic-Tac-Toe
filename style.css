@@ -1,0 +1,101 @@
+body{
+    background-color:#0e0e0e;
+    font-family: "Montserrat", sans-serif;
+
+}
+.board{
+    /* background-color: blueviolet; */
+    height: 500px;
+    width: 500px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center ;
+    background: rgb(171,20,109);
+background: linear-gradient(312deg, rgba(171,20,109,1) 0%, rgba(95,15,178,1) 35%);
+    position: relative;
+}
+.board .cell{
+    all: unset;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.600);
+    width: 30%;
+    height: 30%;
+    /* background-color: aqua; */
+    flex-grow: 0;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+font-size:117px ;
+font-weight: 700;
+color:#fff ;
+display:inline-flex;
+justify-content: center;align-items: center;
+cursor: pointer;
+}
+.board .cell.X{
+    text-shadow:
+    0 0 0px #fff,
+
+    0 0 15px #2a5fe0,
+    0 0 20px #2a5fe0,
+    0 0 25px #2a5fe0,
+    0 0 30px #2a5fe0,
+    0 0 35px #2a5fe0;
+
+}
+.board .cell.O{
+    
+        text-shadow:
+        0 0 0px #fff,
+        0 0  15px #d7225a,
+        0 0 20px #d7225a,
+        0 0 25px #d7225a,
+        0 0 30px #d7225a,
+        0 0 35px #d7225a;
+    
+    
+}.board .result{
+    background-color: rgb(35 9 38 /89%);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px ;
+    color:#fff;
+font-weight: 700;
+position: absolute;
+}
+.board .result button{
+    all: unset;
+    font-size: 30px ;
+    background-color: #8d5869;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 20px;
+    margin:9px;
+    cursor: pointer;
+}
+.board .result button:hover{
+    background-color: #af98a0;
+
+
+}
+.board .result button:active{
+    background-color: hsl(310, 33%, 66%);
+
+}
+.results{
+    color: #fff;
+    margin: 9px auto;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 50px;
+column-gap: 60px;
+
+}
